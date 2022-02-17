@@ -1,0 +1,81 @@
+.admin_line_chart_container{
+    height: 100%;
+
+    .line_chart_info{
+        height: 128px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 16px;
+
+        div>h3{
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            color: #171717;
+            padding-bottom: 4px;
+        }
+        div>span{
+            font-family: Inter;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 20px;
+            color: #B9B9B9;
+            margin-top: 8px;
+        }
+        .line_chart_number_info{
+            display: flex;
+            flex-direction: row;
+
+            div{
+                display: flex;
+                flex-direction: column;
+                &:first-child{
+                    margin-right: 51px;
+                }
+                p{
+                    font-family: Inter;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 140%;
+                    letter-spacing: 0.3px;
+                    text-transform: uppercase;
+                    color: #B7BDBB;
+                    position: relative;
+                    &::before{
+                        content:"";
+                        position: absolute;
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 50%;
+                        top: 3px;
+                        left: -12px;
+                        background-color:#EAC544;;
+                    }
+                }
+                span{
+                    font-family: Inter;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #0D1012;
+                }
+                &:last-child>p::before{
+                    background: #159671;
+                }
+            }
+        }
+    }
+
+    .admin_line_chart{
+        display: flex;
+        flex-direction: column;
+        height: 234px;
+        padding: 0px 16px 16px 0px;
+    }
+}
