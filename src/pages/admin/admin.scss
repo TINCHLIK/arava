@@ -1,14 +1,14 @@
 .admin{
     width: 100%;
     height: 100vh;
-    // background: #E5E5E5;
     background: #F9FAFB;
     display: flex;
     flex-direction: row;
     overflow: hidden;
+    // padding-bottom: 120px;
     .menu{
         width: 256px;
-        height: 100vh;
+        height: 100%;
         background: #FFFFFF;
         border: 1px solid #F2F5F4;
 
@@ -21,6 +21,19 @@
             margin-left: 16px;
             margin-right: 18px;
             justify-content: space-between;
+        }
+        // .menu_section_text_open{
+        //     display: flex;
+        //     justify-content: space-between;
+        // }
+        .menu_section_text_close{
+            overflow-y: scroll;
+            width: 56px;
+            padding-left: 22px;
+            display: flex;
+            flex-direction: column;
+            overflow-x: none;
+            // davom ettirilmoqda
         }
         .menu_sections{
             display: flex;
@@ -90,6 +103,7 @@
     .monitoring{
         height: 100vh;
         width: 100%;
+        background-color: #F9FAFB;
         
 
         .main{
@@ -102,7 +116,6 @@
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
-
             .section_name{
                 font-family: Inter;
                 font-style: normal;
@@ -141,7 +154,7 @@
             width: 100%;
             height:calc(100vh - 82px);
             padding: 40px;
-            background-color: #b4bd94;
+            background-color: #F9FAFB;;
             overflow-y: scroll;
 
             .boxs{
@@ -149,11 +162,17 @@
                 flex-direction: row;
                 justify-content: space-between;
                 margin-bottom: 24px;
-
+                .alohida{
+                    width: 258px !important;
+                   
+                    margin-right: 0px !important;
+                }
                 .box{
                     height: 76px;
-                    max-width: 258px;
+                    // max-width: 258px;
                     width: 100%;
+                    width: 268px;
+                    max-width: 275px;
                     background: #ffffff;
                     border: 1px solid #F2F5F4;
                     box-sizing: border-box;
@@ -161,7 +180,8 @@
                     display: flex;
                     align-items: center;
                     padding: 16px;
-
+                    margin-right: 24px;
+                    
                     .box_icon_container{
                         width: 44px;
                         height: 44px;
@@ -221,13 +241,14 @@
                     height: calc(100vh - 82px - 40px - 76px - 24px);
 
                     .client_statistics_container_ui{
-                        max-width: 822px;
+                        // max-width: 822px;
                         margin-bottom: 24px;
                         height: 370px;
                         background: #FFFFFF;
                         border: 1px solid #F2F5F4;
                         box-sizing: border-box;
                         border-radius: 8px;
+                        width: 100%;
 
                         #lineChart{ }
                     }
@@ -237,10 +258,23 @@
                         border: 1px solid #F2F5F4;
                         box-sizing: border-box;
                         border-radius: 8px;
+                        .top_container{
+                            border-bottom: 1px solid #F2F5F4;
+                            h2{
+                                font-family: Inter;
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 16px;
+                                line-height: 24px;
+                                padding: 16px 16px 16px 16px;
+                                color: #171717;
+                            }
+                        }
                     }
                 }
                 .statistics_right_container{
-                    width: 258px;
+                    max-width: 258px;
+                    width: 100%;
                     height: calc(100vh - 82px - 40px - 76px - 24px);
                     border-radius: 8px;
                     .new_customers{
@@ -252,8 +286,30 @@
                     }
                     .more_views{
                         // height: 100%;
+                        padding: 16px;
                         background: #FFFFFF;
                         border-radius: 8px;
+
+                       .more_views_main_info{
+                           padding-bottom: 8px;
+                           border-bottom: 1px solid #F2F5F4;
+                           h1{
+                                font-family: Inter;
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 16px;
+                                line-height: 24px;
+                                color: #0D1012;
+                            }
+                            p{
+                                font-family: Inter;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 12px;
+                                line-height: 16px;
+                                color: #7B817F;
+                            }
+                       } 
                     }
                 }
             }

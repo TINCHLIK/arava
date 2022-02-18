@@ -1,0 +1,35 @@
+.comments_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 16px 0px 16px;
+
+    .main_comments_container{
+        height: 84px;
+        padding: 16px 0px; 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 1px solid #F2F5F4;
+        .comment_info{
+            display: flex;
+            flex-direction: row;
+            .comment_img_container{
+                width: 52px;
+                height: 52px;
+                border-radius: 4px;
+                margin-right: 16px;
+    
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .title{
+    
+            }
+            .comment{}
+        }
+    }
+
+}
